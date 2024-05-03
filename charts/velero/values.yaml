@@ -438,6 +438,8 @@ configuration:
   # Comma separated list of velero feature flags. default: empty
   # features: EnableCSI
   features:
+  # node-agent data-mover-prepare-timeout value. default: empty
+  dataMoverPrepareTimeout:
   # `velero server` default: velero
   namespace:
 
