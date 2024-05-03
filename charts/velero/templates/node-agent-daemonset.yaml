@@ -108,6 +108,9 @@ spec:
             {{- with .logFormat }}
             - --log-format={{ . }}
             {{- end }}
+            {{- with .dataMoverPrepareTimeout }}
+            - --data-mover-prepare-timeout={{ . }}
+            {{- end }}
           {{- end }}
           volumeMounts:
             {{- if .Values.credentials.useSecret }}
